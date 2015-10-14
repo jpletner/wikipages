@@ -1,0 +1,33 @@
+$brand-color: magenta;
+$comp-color: green; 
+
+h1 {
+    color: $brand-color;
+    font-family: fantasy;
+    font-synthesis: style;
+    font-weight: 600;
+}
+
+li {
+    color: $brand-color;
+    list-style-type: square;
+    font-family: monospace;
+    font-size: 15px;
+    a { 
+        text-decoration: none; 
+        color: $brand-color;
+        &:hover {
+            color: $comp-color;
+        }
+    }
+
+}
+
+a { 
+    text-decoration: none; 
+    color: $brand-color;
+    &:hover {
+        color: $comp-color;
+    }
+}
+
