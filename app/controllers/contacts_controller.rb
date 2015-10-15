@@ -31,9 +31,7 @@ class ContactsController < ApplicationController
 
   def update
     @contact = Contact.find(params[:id])
-    if @contact.update(:name => params[:name],
-          :email => params[:email],
-          :phone => params[:phone])
+    if @contact.update(params[:contact])
       render('contacts/success.html.erb')
     else
       render('contacts/edit.html.erb')

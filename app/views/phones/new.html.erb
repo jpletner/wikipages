@@ -1,0 +1,16 @@
+<h1>New phone number for <%= @phone.contact.name %></h1>
+
+<% if @phone.errors.any? %>
+<h3>Please fix these errors:</h3>
+<ul>
+        <% @phone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+</ul>
+<% end %>
+
+<form action ="/contacts/<%= @phone.contact.id %>/phones" method="post">
+        <label for="phone_number">Number</label>
+        <input id="phone_number" name="number" type="text" value="<%= @phone.number %>">
+        <button>Add Phone</button>
+</form>

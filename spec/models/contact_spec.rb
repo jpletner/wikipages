@@ -2,6 +2,8 @@ require_relative '../rails_helper'
 
 describe Contact do
   it { should validate_presence_of :name }
+
+  it {expect have_many :phones}
 end
 
 #describe Contact do

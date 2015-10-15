@@ -1,33 +1,70 @@
-$brand-color: magenta;
-$comp-color: green; 
+$brand-color: #763A7A;
+$comp-color: #0288AD; 
+$bg-color: #F6F3EC;
 
-h1 {
-    color: $brand-color;
+
+body {
+    background-color: $bg-color;
     font-family: fantasy;
+    color: $brand-color;
+}
+
+h1 , h2 {
+    color: $brand-color;
     font-synthesis: style;
     font-weight: 600;
 }
 
-li {
-    color: $brand-color;
-    list-style-type: square;
-    font-family: monospace;
-    font-size: 15px;
-    a { 
-        text-decoration: none; 
-        color: $brand-color;
-        &:hover {
-            color: $comp-color;
-        }
-    }
+p {
+    color: $comp-color;
+}
 
+ul {
+    margin: 0;
+    padding:0;  
+}
+
+.nobullet {
+    list-style-type: none;
 }
 
 a { 
     text-decoration: none; 
     color: $brand-color;
+    font-weight: 700;
     &:hover {
         color: $comp-color;
     }
 }
 
+.showlinks {
+    font-weight: 400;
+    color: $brand-color;
+
+        &:hover {
+            color: $comp-color;
+        }
+}
+
+button {
+    background-color: $comp-color;
+    border: 0px;
+    border-radius: 7px;
+    color: $bg-color;
+    padding: .5%;
+}
+
+li {
+    color: $comp-color;
+    list-style-type: square;
+    font-family: monospace;
+    a { 
+        margin: 0;
+        padding: 0;
+        text-decoration: none; 
+        color: $comp-color;
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
